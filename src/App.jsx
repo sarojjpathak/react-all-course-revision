@@ -2,9 +2,15 @@ import Print from "./print.jsx"
 import './App.css'
 
 function App() {
-const x = ["red","green","blue"];
+const x = [{
+  name : "saroj",
+  age : "21"
+},{
+   name : "sameer",
+  age : "23"
+}];
 let b = x.map(clr =>{
-return <Print color = {clr} />
+return <Print name = {clr.name} age = {clr.age} />
 });
 
 
